@@ -3,15 +3,15 @@ import Dad from "./Dad";
 import Aunty from "./Aunty";
 import Uncle from "./Uncle";
 
-const Grandpa = () => {
+const Grandpa = ({asset}) => {
   return (
     <div>
       <h3>Grandpa</h3>
       <section className="flex">
-        <Dad />
+        <Dad asset={asset} />
 
         <Uncle />
-        <Aunty />
+        <Aunty asset={asset} />
       </section>
     </div>
   );
